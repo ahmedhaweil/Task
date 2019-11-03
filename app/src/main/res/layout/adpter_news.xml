@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+android:id="@+id/item"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/imgnews"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="12dp"
+        android:src="@android:drawable/edit_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txttitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/imgnews"
+        android:gravity="start"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgnews"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_toEndOf="@+id/imgnews" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtauthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txttitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:layout_toRightOf="@id/imgnews"
+
+        android:textSize="12sp"
+
+        android:textStyle="normal"
+        app:layout_constraintStart_toEndOf="@id/imgnews"
+        app:layout_constraintTop_toBottomOf="@+id/txttitle"
+        android:layout_toEndOf="@id/imgnews" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="1dp"
+        android:layout_height="15dp"
+        android:layout_below="@+id/txttitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="35dp"
+        android:layout_toRightOf="@+id/txtauthor"
+        android:background="#000000"
+        app:layout_constraintStart_toEndOf="@id/txtauthor"
+        app:layout_constraintTop_toBottomOf="@+id/txttitle"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/txtauthor" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtsite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txttitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="35dp"
+        android:layout_toRightOf="@+id/view"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@id/view"
+        app:layout_constraintTop_toBottomOf="@+id/txttitle"
+        android:layout_toEndOf="@+id/view" />
+</RelativeLayout>

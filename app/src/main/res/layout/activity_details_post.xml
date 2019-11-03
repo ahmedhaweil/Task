@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsPost">
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:id="@+id/imagenew"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/titlearc"
+        android:layout_below="@+id/imagenew"
+        android:layout_margin="15dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtauthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titlearc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textSize="12sp"
+        android:textStyle="normal"/>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="1dp"
+        android:layout_height="18dp"
+        android:layout_below="@+id/titlearc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@+id/txtauthor"
+        android:background="#000000"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/txtauthor" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtsite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titlearc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/view"
+        android:textSize="12sp"
+        android:layout_toEndOf="@+id/view" />
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/detailspost"
+    android:layout_below="@+id/txtsite"
+    android:layout_marginTop="10dp"
+    />
+
+</RelativeLayout>
